@@ -8,12 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		6EDA58AC1F1E3D580071B3F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA58AB1F1E3D580071B3F1 /* AppDelegate.swift */; };
-		6EDA58AE1F1E3D580071B3F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA58AD1F1E3D580071B3F1 /* ViewController.swift */; };
-		6EDA58B11F1E3D580071B3F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA58AF1F1E3D580071B3F1 /* Main.storyboard */; };
 		6EDA58B31F1E3D580071B3F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA58B21F1E3D580071B3F1 /* Assets.xcassets */; };
-		6EDA58B61F1E3D580071B3F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA58B41F1E3D580071B3F1 /* LaunchScreen.storyboard */; };
 		6EDA58C11F1E3D580071B3F1 /* CycleStatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA58C01F1E3D580071B3F1 /* CycleStatsTests.swift */; };
 		6EDA58CC1F1E3D580071B3F1 /* CycleStatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA58CB1F1E3D580071B3F1 /* CycleStatsUITests.swift */; };
+		6EDA58DD1F1E41210071B3F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA58D91F1E41210071B3F1 /* LaunchScreen.storyboard */; };
+		6EDA58DE1F1E41210071B3F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA58DA1F1E41210071B3F1 /* Main.storyboard */; };
+		6EDA58E01F1E41210071B3F1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA58DC1F1E41210071B3F1 /* Info.plist */; };
+		6EDA58F71F1E44540071B3F1 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA58EB1F1E444B0071B3F1 /* Roboto-Black.ttf */; };
+		6EDA58F81F1E44540071B3F1 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA58EC1F1E444B0071B3F1 /* Roboto-BlackItalic.ttf */; };
+		6EDA58F91F1E44540071B3F1 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA58ED1F1E444B0071B3F1 /* Roboto-Bold.ttf */; };
+		6EDA58FA1F1E44540071B3F1 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA58EE1F1E444B0071B3F1 /* Roboto-BoldItalic.ttf */; };
+		6EDA58FB1F1E44540071B3F1 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA58EF1F1E444B0071B3F1 /* Roboto-Italic.ttf */; };
+		6EDA58FC1F1E44540071B3F1 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA58F01F1E444B0071B3F1 /* Roboto-Light.ttf */; };
+		6EDA58FD1F1E44540071B3F1 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA58F11F1E444B0071B3F1 /* Roboto-LightItalic.ttf */; };
+		6EDA58FE1F1E44540071B3F1 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA58F21F1E444B0071B3F1 /* Roboto-Medium.ttf */; };
+		6EDA58FF1F1E44540071B3F1 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA58F31F1E444B0071B3F1 /* Roboto-MediumItalic.ttf */; };
+		6EDA59001F1E44540071B3F1 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA58F41F1E444B0071B3F1 /* Roboto-Regular.ttf */; };
+		6EDA59011F1E44540071B3F1 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA58F51F1E444B0071B3F1 /* Roboto-Thin.ttf */; };
+		6EDA59021F1E44540071B3F1 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA58F61F1E444B0071B3F1 /* Roboto-ThinItalic.ttf */; };
+		6EDA59041F1E45510071B3F1 /* BebasNeue-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA59031F1E45510071B3F1 /* BebasNeue-Bold.otf */; };
+		6EDA59061F1E4D080071B3F1 /* LandingPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA59051F1E4D080071B3F1 /* LandingPageController.swift */; };
+		6EDA59081F1E4E5A0071B3F1 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA59071F1E4E5A0071B3F1 /* SignUpController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,17 +51,31 @@
 /* Begin PBXFileReference section */
 		6EDA58A81F1E3D580071B3F1 /* CycleStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CycleStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EDA58AB1F1E3D580071B3F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6EDA58AD1F1E3D580071B3F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6EDA58B01F1E3D580071B3F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6EDA58B21F1E3D580071B3F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6EDA58B51F1E3D580071B3F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6EDA58B71F1E3D580071B3F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EDA58BC1F1E3D580071B3F1 /* CycleStatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CycleStatsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EDA58C01F1E3D580071B3F1 /* CycleStatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleStatsTests.swift; sourceTree = "<group>"; };
 		6EDA58C21F1E3D580071B3F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EDA58C71F1E3D580071B3F1 /* CycleStatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CycleStatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EDA58CB1F1E3D580071B3F1 /* CycleStatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleStatsUITests.swift; sourceTree = "<group>"; };
 		6EDA58CD1F1E3D580071B3F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EDA58D91F1E41210071B3F1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6EDA58DA1F1E41210071B3F1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		6EDA58DC1F1E41210071B3F1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Supporting/Info.plist; sourceTree = "<group>"; };
+		6EDA58EB1F1E444B0071B3F1 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		6EDA58EC1F1E444B0071B3F1 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		6EDA58ED1F1E444B0071B3F1 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		6EDA58EE1F1E444B0071B3F1 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		6EDA58EF1F1E444B0071B3F1 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		6EDA58F01F1E444B0071B3F1 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		6EDA58F11F1E444B0071B3F1 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		6EDA58F21F1E444B0071B3F1 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		6EDA58F31F1E444B0071B3F1 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		6EDA58F41F1E444B0071B3F1 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		6EDA58F51F1E444B0071B3F1 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		6EDA58F61F1E444B0071B3F1 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		6EDA59031F1E45510071B3F1 /* BebasNeue-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Bold.otf"; sourceTree = "<group>"; };
+		6EDA59051F1E4D080071B3F1 /* LandingPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LandingPageController.swift; path = Controllers/LandingPageController.swift; sourceTree = "<group>"; };
+		6EDA59071F1E4E5A0071B3F1 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpController.swift; path = Controllers/SignUpController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +126,16 @@
 		6EDA58AA1F1E3D580071B3F1 /* CycleStats */ = {
 			isa = PBXGroup;
 			children = (
+				6EDA58E91F1E417D0071B3F1 /* Views */,
+				6EDA58E81F1E41760071B3F1 /* Supporting */,
+				6EDA58E71F1E41690071B3F1 /* Storyboards */,
+				6EDA58E61F1E41630071B3F1 /* Services */,
+				6EDA58E51F1E415E0071B3F1 /* Rescources */,
+				6EDA58E41F1E41500071B3F1 /* Models */,
+				6EDA58E31F1E414A0071B3F1 /* Helpers */,
+				6EDA58E21F1E413D0071B3F1 /* Extensions */,
+				6EDA58E11F1E41340071B3F1 /* Controllers */,
 				6EDA58AB1F1E3D580071B3F1 /* AppDelegate.swift */,
-				6EDA58AD1F1E3D580071B3F1 /* ViewController.swift */,
-				6EDA58AF1F1E3D580071B3F1 /* Main.storyboard */,
-				6EDA58B21F1E3D580071B3F1 /* Assets.xcassets */,
-				6EDA58B41F1E3D580071B3F1 /* LaunchScreen.storyboard */,
-				6EDA58B71F1E3D580071B3F1 /* Info.plist */,
 			);
 			path = CycleStats;
 			sourceTree = "<group>";
@@ -123,6 +156,96 @@
 				6EDA58CD1F1E3D580071B3F1 /* Info.plist */,
 			);
 			path = CycleStatsUITests;
+			sourceTree = "<group>";
+		};
+		6EDA58E11F1E41340071B3F1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6EDA59051F1E4D080071B3F1 /* LandingPageController.swift */,
+				6EDA59071F1E4E5A0071B3F1 /* SignUpController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6EDA58E21F1E413D0071B3F1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		6EDA58E31F1E414A0071B3F1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		6EDA58E41F1E41500071B3F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6EDA58E51F1E415E0071B3F1 /* Rescources */ = {
+			isa = PBXGroup;
+			children = (
+				6EDA58EA1F1E441B0071B3F1 /* Fonts */,
+				6EDA58B21F1E3D580071B3F1 /* Assets.xcassets */,
+			);
+			name = Rescources;
+			sourceTree = "<group>";
+		};
+		6EDA58E61F1E41630071B3F1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		6EDA58E71F1E41690071B3F1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6EDA58DA1F1E41210071B3F1 /* Main.storyboard */,
+				6EDA58D91F1E41210071B3F1 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		6EDA58E81F1E41760071B3F1 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				6EDA58DC1F1E41210071B3F1 /* Info.plist */,
+			);
+			name = Supporting;
+			sourceTree = "<group>";
+		};
+		6EDA58E91F1E417D0071B3F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6EDA58EA1F1E441B0071B3F1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6EDA59031F1E45510071B3F1 /* BebasNeue-Bold.otf */,
+				6EDA58EB1F1E444B0071B3F1 /* Roboto-Black.ttf */,
+				6EDA58EC1F1E444B0071B3F1 /* Roboto-BlackItalic.ttf */,
+				6EDA58ED1F1E444B0071B3F1 /* Roboto-Bold.ttf */,
+				6EDA58EE1F1E444B0071B3F1 /* Roboto-BoldItalic.ttf */,
+				6EDA58EF1F1E444B0071B3F1 /* Roboto-Italic.ttf */,
+				6EDA58F01F1E444B0071B3F1 /* Roboto-Light.ttf */,
+				6EDA58F11F1E444B0071B3F1 /* Roboto-LightItalic.ttf */,
+				6EDA58F21F1E444B0071B3F1 /* Roboto-Medium.ttf */,
+				6EDA58F31F1E444B0071B3F1 /* Roboto-MediumItalic.ttf */,
+				6EDA58F41F1E444B0071B3F1 /* Roboto-Regular.ttf */,
+				6EDA58F51F1E444B0071B3F1 /* Roboto-Thin.ttf */,
+				6EDA58F61F1E444B0071B3F1 /* Roboto-ThinItalic.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +358,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EDA58B61F1E3D580071B3F1 /* LaunchScreen.storyboard in Resources */,
+				6EDA58F91F1E44540071B3F1 /* Roboto-Bold.ttf in Resources */,
+				6EDA58FD1F1E44540071B3F1 /* Roboto-LightItalic.ttf in Resources */,
+				6EDA58FF1F1E44540071B3F1 /* Roboto-MediumItalic.ttf in Resources */,
+				6EDA58FB1F1E44540071B3F1 /* Roboto-Italic.ttf in Resources */,
+				6EDA58FC1F1E44540071B3F1 /* Roboto-Light.ttf in Resources */,
+				6EDA58E01F1E41210071B3F1 /* Info.plist in Resources */,
+				6EDA58FA1F1E44540071B3F1 /* Roboto-BoldItalic.ttf in Resources */,
+				6EDA58F81F1E44540071B3F1 /* Roboto-BlackItalic.ttf in Resources */,
+				6EDA59011F1E44540071B3F1 /* Roboto-Thin.ttf in Resources */,
+				6EDA59001F1E44540071B3F1 /* Roboto-Regular.ttf in Resources */,
+				6EDA58DE1F1E41210071B3F1 /* Main.storyboard in Resources */,
+				6EDA59041F1E45510071B3F1 /* BebasNeue-Bold.otf in Resources */,
+				6EDA58FE1F1E44540071B3F1 /* Roboto-Medium.ttf in Resources */,
+				6EDA59021F1E44540071B3F1 /* Roboto-ThinItalic.ttf in Resources */,
+				6EDA58F71F1E44540071B3F1 /* Roboto-Black.ttf in Resources */,
 				6EDA58B31F1E3D580071B3F1 /* Assets.xcassets in Resources */,
-				6EDA58B11F1E3D580071B3F1 /* Main.storyboard in Resources */,
+				6EDA58DD1F1E41210071B3F1 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +399,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EDA58AE1F1E3D580071B3F1 /* ViewController.swift in Sources */,
+				6EDA59061F1E4D080071B3F1 /* LandingPageController.swift in Sources */,
 				6EDA58AC1F1E3D580071B3F1 /* AppDelegate.swift in Sources */,
+				6EDA59081F1E4E5A0071B3F1 /* SignUpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,25 +435,6 @@
 			targetProxy = 6EDA58C81F1E3D580071B3F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		6EDA58AF1F1E3D580071B3F1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6EDA58B01F1E3D580071B3F1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6EDA58B41F1E3D580071B3F1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6EDA58B51F1E3D580071B3F1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6EDA58CE1F1E3D580071B3F1 /* Debug */ = {
@@ -418,7 +537,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2X5M32A4UP;
-				INFOPLIST_FILE = CycleStats/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CycleStats/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.willcohen.CycleStats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,7 +550,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2X5M32A4UP;
-				INFOPLIST_FILE = CycleStats/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CycleStats/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.willcohen.CycleStats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +635,7 @@
 				6EDA58D21F1E3D580071B3F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EDA58D31F1E3D580071B3F1 /* Build configuration list for PBXNativeTarget "CycleStatsTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +644,7 @@
 				6EDA58D51F1E3D580071B3F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EDA58D61F1E3D580071B3F1 /* Build configuration list for PBXNativeTarget "CycleStatsUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +653,7 @@
 				6EDA58D81F1E3D580071B3F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
