@@ -37,13 +37,13 @@
                                 <rect key="frame" x="16" y="45" width="343" height="166"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BikeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="gRr-DN-oNw">
-                                        <rect key="frame" x="72" y="0.0" width="200" height="91"/>
+                                        <rect key="frame" x="71.5" y="0.0" width="200" height="91"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="91" id="1lO-tX-Pqp"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYG-33-0y4">
-                                        <rect key="frame" x="47" y="101" width="250" height="65"/>
+                                        <rect key="frame" x="47" y="101" width="249.5" height="65"/>
                                         <attributedString key="attributedText">
                                             <fragment content="CYCLE STATS">
                                                 <attributes>
@@ -67,14 +67,14 @@
                                             <constraint firstAttribute="height" constant="35" id="QqA-Yv-ELE"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8it-12-sMP">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8it-12-sMP">
                                         <rect key="frame" x="30" y="0.0" width="273" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="3l9-XP-aIX"/>
                                         </constraints>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -95,14 +95,14 @@
                                             <constraint firstAttribute="width" constant="20" id="SOf-07-kY7"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sxy-sW-t3x">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sxy-sW-t3x">
                                         <rect key="frame" x="25" y="0.0" width="278" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="Klh-mZ-zSJ"/>
                                         </constraints>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -209,14 +209,14 @@
                                             <constraint firstAttribute="height" constant="35" id="yR0-z5-4pq"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gEu-eC-FdK">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gEu-eC-FdK">
                                         <rect key="frame" x="30" y="0.0" width="273" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="bre-OT-6bs"/>
                                         </constraints>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -237,14 +237,14 @@
                                             <constraint firstAttribute="width" constant="20" id="fqz-xs-7mq"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G1u-xJ-KNU">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G1u-xJ-KNU">
                                         <rect key="frame" x="25" y="0.0" width="278" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="PDJ-Ro-lkX"/>
                                         </constraints>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -268,14 +268,14 @@
                                             <constraint firstAttribute="width" constant="20" id="ssi-mY-ZRQ"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YtZ-85-WZJ">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YtZ-85-WZJ">
                                         <rect key="frame" x="25" y="0.0" width="278" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="hpx-6T-Qyv"/>
                                         </constraints>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -320,13 +320,13 @@
                                 <rect key="frame" x="16" y="35" width="343" height="141"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BikeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="kgg-FP-o4n">
-                                        <rect key="frame" x="72" y="0.0" width="200" height="91"/>
+                                        <rect key="frame" x="71.5" y="0.0" width="200" height="91"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="91" id="zT8-KP-8fZ"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4d-vS-8Lf">
-                                        <rect key="frame" x="95" y="101" width="154" height="40"/>
+                                        <rect key="frame" x="95" y="101" width="153.5" height="40"/>
                                         <attributedString key="attributedText">
                                             <fragment content="CYCLE STATS">
                                                 <attributes>
