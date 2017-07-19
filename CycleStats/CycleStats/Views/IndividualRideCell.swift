@@ -16,7 +16,7 @@ class IndividualRideCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        
     }
 
     @IBAction func cellButtonPressed(_ sender: Any) {
