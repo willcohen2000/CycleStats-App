@@ -37,8 +37,8 @@ class Ride {
             self.rideLenthInMiles = rideLength
         }
         
-        if let rideTime = postData["rideDate"] as? String {
-            self.rideTime = rideTime
+        if let rideDate = postData["rideDate"] as? String {
+            self.rideDateFormatted = rideDate
         }
     
     }

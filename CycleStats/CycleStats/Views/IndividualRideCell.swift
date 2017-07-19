@@ -19,6 +19,14 @@ class IndividualRideCell: UITableViewCell {
         
     }
 
+    var ride: Ride!
+    
+    func configureCell(ride: Ride) {
+        self.ride = ride
+        rideNameLabel.text = ride.rideName
+        rideInfoLabel.text = "\(ride.rideLenthInMiles!) mi - \(ride.rideDateFormatted!)"
+    }
+    
     @IBAction func cellButtonPressed(_ sender: Any) {
         
     }

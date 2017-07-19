@@ -21,6 +21,11 @@ class CreateNewRideController: UIViewController {
     
     let invalidRedColor = UIColor(red:0.91, green:0.30, blue:0.24, alpha:1.0)
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         hoursPickerView.delegate = self

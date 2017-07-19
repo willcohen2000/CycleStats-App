@@ -36,8 +36,10 @@ class IndividualRidesController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let individualRide = individualRides[indexPath.row]
         if let cell = individualRidesTableView.dequeueReusableCell(withIdentifier: Constants.SegueIndentifers.IndividualRideIdentifier) as? IndividualRideCell {
             cell.backgroundColor = UIColor.clear
+            cell.configureCell(ride: individualRide)
             return cell
         } else {
             return IndividualRideCell()
