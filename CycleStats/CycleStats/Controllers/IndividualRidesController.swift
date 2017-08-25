@@ -9,11 +9,14 @@
 import UIKit
 import Firebase
 
-class IndividualRidesController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class IndividualRidesController: UIViewController, UITableViewDelegate, UITableViewDataSource, pickIndividualRideDelegate {
 
     @IBOutlet weak var individualRidesTableView: UITableView!
     
     var individualRides = [Ride]()
+    var selectedRide: Ride?
+    
+    var delegate: pickIndividualRideDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +42,7 @@ class IndividualRidesController: UIViewController, UITableViewDelegate, UITableV
         let individualRide = individualRides[indexPath.row]
         if let cell = individualRidesTableView.dequeueReusableCell(withIdentifier: Constants.SegueIndentifers.IndividualRideIdentifier) as? IndividualRideCell {
             cell.backgroundColor = UIColor.clear
+            cell.delegate = self
             cell.configureCell(ride: individualRide)
             return cell
         } else {
@@ -50,8 +54,17 @@ class IndividualRidesController: UIViewController, UITableViewDelegate, UITableV
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func newRideButtonPressed(_ sender: Any) {
-        
+    func pickIndividualRide(_ ride: Ride) {
+        self.selectedRide = ride
+        self.performSegue(withIdentifier: Constants.SegueIndentifers.goToIndividualRideSegue, sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == Constants.SegueIndentifers.goToIndividualRideSegue) {
+            if let nextVC = segue.destination as? ViewIndividualRideController {
+                nextVC.ride = self.selectedRide
+            }
+        }
     }
     
 }

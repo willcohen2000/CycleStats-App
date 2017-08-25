@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol pickIndividualRideDelegate {
+    func pickIndividualRide(_ ride: Ride)
+}
+
 class IndividualRideCell: UITableViewCell {
 
     @IBOutlet weak var cellButton: UIButton!
@@ -20,6 +24,7 @@ class IndividualRideCell: UITableViewCell {
     }
 
     var ride: Ride!
+    var delegate: pickIndividualRideDelegate?
     
     func configureCell(ride: Ride) {
         self.ride = ride
@@ -28,7 +33,9 @@ class IndividualRideCell: UITableViewCell {
     }
     
     @IBAction func cellButtonPressed(_ sender: Any) {
-        
+        if let delegate = delegate {
+            delegate.pickIndividualRide(ride)
+        }
     }
     
 

@@ -10,6 +10,10 @@ import UIKit
 import Foundation
 import Firebase
 
+protocol CreatedNewRideDelegate {
+    func createdNewRide()
+}
+
 class CreateNewRideController: UIViewController {
 
     @IBOutlet weak var holderView: UIView!
@@ -20,6 +24,8 @@ class CreateNewRideController: UIViewController {
     @IBOutlet weak var saveRideButton: UIButton!
     
     let invalidRedColor = UIColor(red:0.91, green:0.30, blue:0.24, alpha:1.0)
+    var saveRideIsLoading: Bool = false
+    var delegate: CreatedNewRideDelegate?
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         view.endEditing(true)
@@ -41,27 +47,37 @@ class CreateNewRideController: UIViewController {
     }
 
     @IBAction func saveRideButtonPressed(_ sender: Any) {
-        guard let miles = Float(numberOfMilesLabel.text!) else {
-            invalidTextFieldReference(textField: numberOfMilesLabel)
-            return
-        }
-        guard let rideName = rideNameLabel.text else {
-            invalidTextFieldReference(textField: rideNameLabel)
-            return
-        }
-        let rideTime = "\(hoursPickerView.selectedRow(inComponent: 0))hrs : \(minutesPickerView.selectedRow(inComponent: 0))mins"
-        
-        let newRide = Ride(rideName: rideName, rideDate: Date(), rideLengthInMiles: miles, rideTime: rideTime)
-        FirebaseService.postNewRideToFirebase(ride: newRide, user: Auth.auth().currentUser!, completionHandler: { (success) -> Void in
-            if (success) {
-                self.dismiss(animated: true, completion: nil)
-            } else {
-                let firebasePostError = UIAlertController(title: "Unable to save ride.", message:
-                    "It seems like we cannot successfuly save your ride at this time. This may be due to lack of internet connection. Please try again soon.", preferredStyle: UIAlertControllerStyle.alert)
-                firebasePostError.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default,handler: nil))
-                self.present(firebasePostError, animated: true, completion: nil)
+        if (!saveRideIsLoading)  {
+            saveRideIsLoading = true
+            guard let miles = Float(numberOfMilesLabel.text!) else {
+                invalidTextFieldReference(textField: numberOfMilesLabel)
+                return
             }
-        })
+            guard let rideName = rideNameLabel.text else {
+                invalidTextFieldReference(textField: rideNameLabel)
+                return
+            }
+            let rideTime = "\(hoursPickerView.selectedRow(inComponent: 0))hrs : \(minutesPickerView.selectedRow(inComponent: 0))mins"
+            
+            let newRide = Ride(rideName: rideName, rideDate: Date(), rideLengthInMiles: miles, rideTime: rideTime)
+            FirebaseService.postNewRideToFirebase(ride: newRide, user: Auth.auth().currentUser!, completionHandler: { (success) -> Void in
+                if (success) {
+                    let totalMiles = UserDefaults.standard.float(forKey: "totalMiles")
+                    UserDefaults.standard.set((totalMiles + miles), forKey: "totalMiles")
+                    let totalRides = UserDefaults.standard.integer(forKey: "totalRides")
+                    UserDefaults.standard.set((totalRides + 1), forKey: "totalRides")
+                    if let delegate = self.delegate {
+                        delegate.createdNewRide()
+                    }
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    let firebasePostError = UIAlertController(title: "Unable to save ride.", message:
+                        "It seems like we cannot successfuly save your ride at this time. This may be due to lack of internet connection. Please try again soon.", preferredStyle: UIAlertControllerStyle.alert)
+                    firebasePostError.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default,handler: nil))
+                    self.present(firebasePostError, animated: true, completion: nil)
+                }
+            })
+        }
     }
 
     @IBAction func backButtonPressed(_ sender: Any) {

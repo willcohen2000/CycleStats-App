@@ -12,6 +12,7 @@ import Firebase
 class FirebaseService {
     static func postNewRideToFirebase(ride: Ride, user: User, completionHandler: @escaping (_ success: Bool) -> Void) {
         let ridesReference = Constants.databaseReference.child("Rides")
+        let recentRidesReference = Constants.databaseReference.child("RecentRides")
         
         let rideDictionary = [
             "rideName": ride.rideName,
@@ -20,6 +21,7 @@ class FirebaseService {
             "rideLength": ride.rideLenthInMiles
         ] as [String : Any]
         
+        recentRidesReference.childByAutoId().updateChildValues(rideDictionary)
         ridesReference.child(user.uid).childByAutoId().updateChildValues(rideDictionary) { (error, ref) -> Void in
             if (error != nil) {
                 completionHandler(false)

@@ -14,6 +14,7 @@ target 'CycleStats' do
   pod ‘Firebase/Messaging’
   pod 'IQKeyboardManagerSwift'
   pod 'SwiftChart'
+  pod 'SwiftKeychainWrapper'
 
   target 'CycleStatsTests' do
     inherit! :search_paths

@@ -15,6 +15,7 @@ class Ride {
     var rideTime: String!
     var rideLenthInMiles: Float!
     var rideDateFormatted: String!
+    var postKey: String!
     
     init(rideName: String, rideDate: Date, rideLengthInMiles: Float, rideTime: String) {
         self.rideName = rideName
@@ -25,6 +26,8 @@ class Ride {
     
     init(postkey: String, postData: Dictionary<String, AnyObject>) {
         
+        self.postKey = postkey
+    
         if let rideName = postData["rideName"] as? String {
             self.rideName = rideName
         }

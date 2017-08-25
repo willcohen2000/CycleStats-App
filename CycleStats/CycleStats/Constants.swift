@@ -18,6 +18,7 @@ struct Constants {
     struct SegueIndentifers {
         static var IndividualRideIdentifier = "IndividualRideCell"
         static var NewRideIdentifier = "toNewRideSegue"
+        static var goToIndividualRideSegue = "toIndividualRideSegue"
     }
     
     struct TimePicker {
@@ -48,8 +49,7 @@ struct Constants {
             40,
             45,
             50,
-            55,
-            60
+            55
         ]
 
     }

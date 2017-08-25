@@ -21,7 +21,7 @@
         <!--Landing Page Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LandingPageController" customModule="CycleStats" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="landingPage" storyboardIdentifier="landingPage" id="BYZ-38-t0r" customClass="LandingPageController" customModule="CycleStats" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -47,7 +47,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="CYCLE STATS">
                                                 <attributes>
-                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="0.80138036809815949" colorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="65" name="BebasNeueBold"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
@@ -178,11 +178,12 @@
                         <outlet property="emailTextField" destination="8it-12-sMP" id="Y21-Ao-Do9"/>
                         <outlet property="logInButton" destination="WQI-FT-t84" id="pqM-wQ-2AH"/>
                         <outlet property="passwordTextField" destination="Sxy-sW-t3x" id="ZJ3-pg-6cM"/>
+                        <segue destination="LeN-Vg-yRu" kind="show" identifier="goToCreateAccount" id="xbh-4n-rZR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-63" y="139"/>
+            <point key="canvasLocation" x="-314" y="139"/>
         </scene>
         <!--Sign Up Controller-->
         <scene sceneID="tKz-sG-ZAh">
@@ -388,7 +389,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VyM-Sc-gst" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="559" y="139"/>
+            <point key="canvasLocation" x="591" y="139"/>
         </scene>
     </scenes>
     <resources>
@@ -397,4 +398,7 @@
         <image name="EmailIcon" width="57" height="41"/>
         <image name="PasswordIcon" width="43" height="54"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xbh-4n-rZR"/>
+    </inferredMetricsTieBreakers>
 </document>

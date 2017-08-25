@@ -54,6 +54,7 @@ PODS:
   - IQKeyboardManagerSwift (4.0.10)
   - Protobuf (3.3.0)
   - SwiftChart (0.5.0)
+  - SwiftKeychainWrapper (3.0.1)
 
 DEPENDENCIES:
   - Firebase/Auth
@@ -63,6 +64,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - IQKeyboardManagerSwift
   - SwiftChart
+  - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
   Firebase: c7ad0731eab26d18a3fc547dd048b0f7cd9c63ae
@@ -78,7 +80,8 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 75ba21a23794a1e6b6fe6d9a267ea17f80e06771
   Protobuf: d582fecf68201eac3d79ed61369ef45734394b9c
   SwiftChart: d1d22d2b1c4582f4d561edf97a210059c00ee256
+  SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
 
-PODFILE CHECKSUM: a21cb90687d2a0522df2617e5627cfbf4256d10b
+PODFILE CHECKSUM: 17c9d1192883c2187f7b039dc18017f5116a78b8
 
 COCOAPODS: 1.2.1
